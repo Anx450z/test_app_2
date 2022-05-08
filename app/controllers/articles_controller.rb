@@ -1,7 +1,6 @@
 class ArticlesController < ApplicationController
 
     def show
-        # binding.pry
         @article = Article.find(params[:id])
     end
 
@@ -18,7 +17,6 @@ class ArticlesController < ApplicationController
     end
 
     def create
-        # binding.pry
         @article = Article.new(params.require(:article).permit(:title, :description))
         if  @article.save
             flash[:notice] = "Article was created successfully"
