@@ -1,0 +1,5 @@
+@import 'bootsrap/dist/css/bootstrap';
+
+.navbar{
+    background-color: #FDF6EA !important;
+}
